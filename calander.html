@@ -1,0 +1,219 @@
+html>
+ <head></head>
+ <body>
+  html&gt; 
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+  <title>Ecommerce</title> 
+  <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /*common css*/
+        .container_flued {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .container {
+            max-width: 1250px;
+            width: 100%;
+            /*height: 60px;*/
+            /* background-color: blue;*/
+        }
+        .title{
+            font-size: 40px;
+            font-family: Segoe UI;
+            font-weight: 300;
+            
+        }
+        .header {
+            height: 70px;
+            background-color: rgba(0,0,0,0.5);
+            font-family: Segoe UI;
+            position: fixed;
+            top: 0px;
+            z-index: 99;
+        }
+        .header-container {
+            height: 70px;
+            /*background-color: blue;*/
+            display: flex;
+            justify-content: space-between;
+        }
+        .logo {
+            height: 70px;
+            width: 800px;
+            /*background-color: yellow;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .navigation {
+            width: 60%;
+            height: 70px;
+            /*background-color: brown;*/
+        }
+        .logo_title {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: white;
+            position: absolute;
+            left: 30px;
+        }
+        .header_btn {
+            border: 1px solid #e07e22;
+            color: #e07e22 !important;
+            padding: 6px 15px;
+            font-size: 9px !important;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+        .header_btn:hover {
+            border-block: 1px solid #e07e22;
+            background-color: #e07e22;
+            color: white !important;
+        }
+        .logo_title>span {
+            color: #e07e22;
+        }
+        .navigation>ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+            /* margin: 10px 10px;*/
+
+        }
+        .navigation>ul>li {
+            cursor: pointer;
+            font-size: 12px;
+            color: white;
+        }
+        .home {
+            /*position: absolute;*/
+            /*left: 625px;*/
+        }
+        .banner {
+            height: 700px;
+            /* background-color: red;*/
+            background-image: url('./shopping.jpeg');
+            background-size: cover;
+            background-position-y: 100px;
+            position: relative;
+            overflow: hidden;
+
+            background-repeat: no-repeat;
+        }
+        .banner-container {
+            height: 620px;
+            /*  background-color: blue;*/
+            display: flex;
+            align-items: center;
+        }
+        .banner-info {
+            /*height: 200px;*/
+            width: 35%;
+            background-color: red;
+            position: absolute;
+            z-index: 2;
+        }
+        .banner-info>h1 {
+            font-size: 25px;
+            font-family: Segoe UI;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+        .banner-btn {
+            border: 1px solid white;
+            background-color: transparent;
+            padding: 15px 30px;
+            color: white;
+            font-size: 16px;
+            margin-right: 20px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .banner-btn:hover {
+            border: 1px solid green;
+            background-color: #14bb19;
+        }
+        .banner-bg {
+            width: 50%;
+            height: 420px;
+            background-color: orange;
+            position: absolute;
+            left: 0px;
+
+            z-index: 1;
+            transform: rotate(30deg);
+        }
+        .product{
+           /* height: 500px;*/
+           background-color: #e3e3e3;
+           padding-top: 50px;
+           padding-bottom: 50px;
+        }
+        .card-container{
+            width: 100%;
+            height: 400px;
+            background-color: yellow;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        .items{
+            height: 350px;
+            width: 77%;
+            background-color: brown;
+        
+        }
+        li:hover{
+          background-color: transparent;
+          border: 1px solid green;
+          border-radius:5px;
+        }
+
+
+
+
+    </style> <!--header section--> 
+  <header class="co header"> 
+   <div class="container header-container"> 
+    <div class="logo"> 
+     <h1 class="logo_title"><span>S</span>hop pe</h1> 
+    </div> 
+    <nav class="navigation"> 
+     <ul> 
+      <li class="home"> Home </li> 
+      <li class="about"> About </li> 
+      <li class="Catagary"> Catagary </li> 
+      <li class="cart"> Cart </li> 
+      <li class="header_btn"> Order Now </li> 
+     </ul> 
+    </nav> 
+   </div> 
+  </header> <!--Banner section--> 
+  <section class=" banner"> 
+   <div class="container banner-container"> 
+    <div class="banner-info"> 
+     <h1>Get your hands on amazing products</h1> <button class="banner-btn">Shoping Now</button> 
+    </div> 
+    <div class="banner-bg"> 
+    </div> 
+   </div> 
+  </section> <!--Porduct section--> 
+  <section class="container_flued product"> 
+   <div class="container product-container"> 
+    <h1 class="title">Our Products</h1> 
+    <div class="card-container"> 
+     <div class="items"></div> 
+    </div> 
+   </div> 
+  </section> 
+ </body>
+</html>
